@@ -1,0 +1,11 @@
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    padding : 1% 5%;
+    border: 1px solid red;
+    background-color: rgb(202, 202, 202);
+}
+
+.rodape >nav a img {
+    max-width: 2rem;
+}
