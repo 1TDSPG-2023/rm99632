@@ -40,3 +40,33 @@
     background-color: #fff;
     color: #000;
 }
+
+/* 
+    Determine para a class conteúdo
+    Display flex
+    Adcione a propriedade Flex-Wrap:wrap
+    Largura máxima de 800px.
+    Margen: Top e Bottom: 0/ Left e Right: auto.
+
+    vw = view width
+    vh = view height
+
+*/
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.conteudo >div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+.conteudo >div img {
+    max-width: 100%;
+    display: block;
+}
