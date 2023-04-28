@@ -1,6 +1,7 @@
 @import url("./cabecalho.css");
 @import url("./conteudo.css");
 @import url("./rodape.css");
+@import url("./break-point-1004px.css");
 
 * {
     margin: 0;
@@ -8,21 +9,24 @@
     box-sizing: border-box;
 }
 
-/* BREAKPOINT */
 
-@media(max-width: 1004px) {
-    .cabecalho {
-        flex-direction: column;
-    }
-
-    .cabecalho nav {
-        flex-wrap: nowrap;
-    }
-
-    .cabecalho a {
-        font-size: 3em;
-        padding: 5% 0;
-    }
+/* html {
+    font-size: 62.7%;
 }
 
-/* BREAKPOINT */
+.tit-sec {
+    font-size: 4rem;
+    text-align: center;
+    1em = tamanho total do pai 
+    Neste caso 1em = 16px
+    Logo, 4em = 64px 
+    
+}
+
+.conteudo {
+    font-size: 2rem;
+}
+
+.conteudo >div {
+    font-size: 2rem;
+} */
