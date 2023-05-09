@@ -1,0 +1,9 @@
+.rodape {
+    text-align: center;
+    width: 100%;
+}
+
+.rodape img {
+    max-width: 50px;
+    margin: auto 10px;
+}
