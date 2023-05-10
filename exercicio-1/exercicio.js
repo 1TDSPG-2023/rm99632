@@ -111,4 +111,22 @@ btnPrev.addEventListener("click", function() {
       imagem.src = "/img/lobo1.jpg";
     }
     console.log(imagem.src);
-  });
+});
+
+//4–Crie um botão e um elemento qualquer html, quandoo botão éclicado, exibe uma mensagem neste elemento html na página .
+function ocultarTexto() {
+    var texto = document.getElementById("msg");
+    texto.style.display = "none";
+  }
+  
+function exibirTexto() {
+    var texto = document.getElementById("msg");
+    texto.style.display = "block";
+}
+
+
+//5–Crie um botão que, quando clicado, oculta um elemento HTML.
+function ocultarMensagem() {
+
+}
+
