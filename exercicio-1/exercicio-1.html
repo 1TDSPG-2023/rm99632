@@ -16,7 +16,7 @@
         }
 
         body {
-            margin: 10px;
+            margin: 30px;
             background-color: var(--default-bgnd-color);
             color: var(--default-font-color);
             font-family: Arial, Helvetica, sans-serif;
@@ -46,7 +46,7 @@
         
         .field {
             width: 500px;
-            margin: 20px;
+            margin-bottom: 20px;
             padding: 20px;
         }
 
@@ -57,6 +57,10 @@
         li {
             margin-left: 10%;
             color: var(--default-li-color);
+        }
+
+        .lobo-img-changer > img{
+            width: 20%;
         }
 
         :root {
@@ -78,23 +82,27 @@
         <h2>RM99632 Gabriel Eringer de Oliveira</h2>
         <button type="button" id="change-bgnd-color" onclick="changeBackgroundColor()">Mudar Cor de Fundo</button>
     </header>
+    <main>
+        <form>
+            <fieldset class="field">
+                <legend>Crie um Item para a Lista</legend>
+                <label for="item">Item: </label>
+                <input type="text" name="item" id="item" placeholder="Item: ">
+                <button type="button" onclick="adicionar()">Adicionar item</button>
+            </fieldset>
+    
+            <fieldset class="field">
+                <legend>Lista de Itens</legend>
+                <ul id="list">
+                </ul>
+            </fieldset>
+        </form>
+        <div class="lobo-img-changer">
+            <img id="lobo-img" src="/img/lobo1.jpg" alt="Lobo"><br>
+            <button id="prev-img" type="button" onclick="trocarImagem()">Anterior</button>
+            <button id="next-img" type="button" onclick="trocarImagem()">Proximo</button>
 
-    <form>
-        <fieldset class="field">
-            <legend>Crie um Item para a Lista</legend>
-            <label for="item">Item: </label>
-            <input type="text" name="item" id="item" placeholder="Item: ">
-            <button type="button" onclick="adicionar()">Adicionar item</button>
-        </fieldset>
-
-        <fieldset class="field">
-            <legend>Lista de Itens</legend>
-            <ul id="list">
-            </ul>
-        </fieldset>
-    </form>
-
-
-
+        </div>
+    </main>
 </body>
 </html>
