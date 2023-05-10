@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script src="./exercicio.js" defer></script>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 30px;
+            background-color: var(--default-bgnd-color);
+            color: var(--default-font-color);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            margin-bottom: 2%;
+        }
+
+        h1{
+            margin: 0;
+            color: var(--default-tit-color);
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .field {
+            width: 500px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        legend {
+            font-size: 2rem;
+        }
+
+        li {
+            margin-left: 10%;
+            color: var(--default-li-color);
+        }
+
+        .lobo-img-changer > img{
+            width: 20%;
+        }
+
+        :root {
+            --default-bgnd-color: #ebebeb;
+            --default-font-color: #202020;
+            --dark-bgnd-color: var(--default-font-color);
+            --dark-font-color: var(--default-bgnd-color);
+
+            --default-li-color: #001cb8;
+            --dark-li-color: #d448ff;
+            
+            --default-tit-color: #00770a;
+            --dark-tit-color: #7ddf0c;
+        }
+
+    </style>
+    <header>
+        <h1>Oloko meu! Javascript??!</h1>
+        <h2>RM99632 Gabriel Eringer de Oliveira</h2>
+        <button type="button" id="change-bgnd-color" onclick="changeBackgroundColor()">Mudar Cor de Fundo</button>
+    </header>
+    <main>
+        <form>
+            <fieldset class="field">
+                <legend>Crie um Item para a Lista</legend>
+                <label for="item">Item: </label>
+                <input type="text" name="item" id="item" placeholder="Item: ">
+                <button type="button" onclick="adicionar()">Adicionar item</button>
+            </fieldset>
+    
+            <fieldset class="field">
+                <legend>Lista de Itens</legend>
+                <ul id="list">
+                </ul>
+            </fieldset>
+        </form>
+        <div class="lobo-img-changer">
+            <img id="lobo-img" src="/img/lobo1.jpg" alt="Lobo"><br>
+            <button id="prev-img" type="button" onclick="trocarImagem()">Anterior</button>
+            <button id="next-img" type="button" onclick="trocarImagem()">Proximo</button>
+
+        </div>
+        <div class="lobo-descricao">
+            <button id="exibir-msg" type="button" onclick="exibirTexto()">Exibir Mensagem</button>
+            <button id="ocultar-msg" type="button" onclick="ocultarTexto()">Ocultar Mensagem</button>
+            <p id="msg">Um lobo dorminhoco</p>
+        </div>
+    </main>
+</body>
+</html>
