@@ -25,17 +25,50 @@
         h1 {
             text-align: center;
         }
+        
+        .field {
+            width: 500px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        legend {
+            font-size: 2rem;
+        }
+
+        li {
+            margin-left: 10%;
+            color: var(--default-li-color);
+        }
 
         :root {
             --default-bgnd-color: #ebebeb;
             --default-font-color: #202020;
             --dark-bgnd-color: var(--default-font-color);
             --dark-font-color: var(--default-bgnd-color);
+            --default-li-color: #001cb8;
+            --dark-li-color: #d448ff;
         }
 
     </style>
 
     <h1>Oloko meu! Javascript??!</h1>
     <button type="button" id="change-bgnd-color" onclick="changeBackgroundColor()">Mudar Cor de Fundo</button>
+
+    <form>
+        <fieldset class="field">
+            <legend>Crie um Item para a Lista</legend>
+            <label for="item">Item: </label>
+            <input type="text" name="item" id="item" placeholder="Item: ">
+            <button type="button" onclick="adicionar()">Adicionar item</button>
+        </fieldset>
+
+        <fieldset class="field">
+            <legend>Lista de Itens</legend>
+            <ul id="list">
+            </ul>
+        </fieldset>
+    </form>
+
 </body>
 </html>
