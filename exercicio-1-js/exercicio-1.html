@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script src="./exercicio.js" defer></script>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 10px;
+            background-color: var(--default-bgnd-color);
+            color: var(--default-font-color);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        :root {
+            --default-bgnd-color: #ebebeb;
+            --default-font-color: #202020;
+            --dark-bgnd-color: var(--default-font-color);
+            --dark-font-color: var(--default-bgnd-color);
+        }
+
+    </style>
+
+    <h1>Oloko meu! Javascript??!</h1>
+    <button type="button" id="change-bgnd-color" onclick="changeBackgroundColor()">Mudar Cor de Fundo</button>
+</body>
+</html>
