@@ -22,8 +22,26 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        h1 {
-            text-align: center;
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            margin-bottom: 2%;
+        }
+
+        h1{
+            margin: 0;
+            color: var(--default-tit-color);
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
         }
         
         .field {
@@ -46,14 +64,20 @@
             --default-font-color: #202020;
             --dark-bgnd-color: var(--default-font-color);
             --dark-font-color: var(--default-bgnd-color);
+
             --default-li-color: #001cb8;
             --dark-li-color: #d448ff;
+            
+            --default-tit-color: #00770a;
+            --dark-tit-color: #7ddf0c;
         }
 
     </style>
-
-    <h1>Oloko meu! Javascript??!</h1>
-    <button type="button" id="change-bgnd-color" onclick="changeBackgroundColor()">Mudar Cor de Fundo</button>
+    <header>
+        <h1>Oloko meu! Javascript??!</h1>
+        <h2>RM99632 Gabriel Eringer de Oliveira</h2>
+        <button type="button" id="change-bgnd-color" onclick="changeBackgroundColor()">Mudar Cor de Fundo</button>
+    </header>
 
     <form>
         <fieldset class="field">
@@ -69,6 +93,8 @@
             </ul>
         </fieldset>
     </form>
+
+
 
 </body>
 </html>
