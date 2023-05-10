@@ -11,32 +11,40 @@ const darkLiColor = 'var(--dark-li-color)';
 const dfltTitColor = 'var(--default-tit-color)';
 const darkTitColor = 'var(--dark-tit-color)';
 
-function changeToDefault() {
-    const select_all_li = document.querySelectorAll('li');
-    const select_all_tit = document.querySelectorAll('h1');
-    document.body.style.backgroundColor = dfltBgndColor;
-    document.body.style.color = dfltFontColor;
-    select_all_li.forEach(li => {
-        li.style.color = dfltLiColor;
-    })
-    select_all_tit.forEach(tit => {
-        tit.style.color = dfltTitColor;
-        tit.style.transition = '5s';
-    })
-}
+const select_all_li = document.querySelectorAll('li');
+const select_all_tit = document.querySelectorAll('h1');
+const select_all_a = document.querySelectorAll('a');
 
+function changeToDefault() {
+  document.body.style.backgroundColor = dfltBgndColor;
+  document.body.style.color = dfltFontColor;
+  select_all_li.forEach(li => {
+    li.style.color = dfltLiColor;
+  })
+  select_all_tit.forEach(tit => {
+    tit.style.color = dfltTitColor;
+    tit.style.transition = '5s';
+  })
+  select_all_a.forEach(a =>{
+    a.style.color = dfltTitColor;
+    a.style.transition = '5s';
+  })
+}
+  
 function changeToDark() {
-    const select_all_li = document.querySelectorAll('li');
-    const select_all_tit = document.querySelectorAll('h1');
-    document.body.style.backgroundColor = dfltFontColor;
-    document.body.style.color = dfltBgndColor;
-    select_all_li.forEach(li => {
-        li.style.color = darkLiColor;
-    })
-    select_all_tit.forEach(tit => {
-        tit.style.color = darkTitColor;
-        tit.style.transition = '5s';
-    })
+  document.body.style.backgroundColor = dfltFontColor;
+  document.body.style.color = dfltBgndColor;
+  select_all_li.forEach(li => {
+    li.style.color = darkLiColor;
+  })
+  select_all_tit.forEach(tit => {
+    tit.style.color = darkTitColor;
+    tit.style.transition = '5s';
+  })
+  select_all_a.forEach(a =>{
+    a.style.color = darkTitColor;
+    a.style.transition = '5s';
+  })
 }
         
 function changeBackgroundColor() {
@@ -114,6 +122,7 @@ btnPrev.addEventListener("click", function() {
 });
 
 //4–Crie um botão e um elemento qualquer html, quandoo botão éclicado, exibe uma mensagem neste elemento html na página .
+//5–Crie um botão que, quando clicado, oculta um elemento HTML.
 function ocultarTexto() {
     var texto = document.getElementById("msg");
     texto.style.display = "none";
@@ -123,10 +132,3 @@ function exibirTexto() {
     var texto = document.getElementById("msg");
     texto.style.display = "block";
 }
-
-
-//5–Crie um botão que, quando clicado, oculta um elemento HTML.
-function ocultarMensagem() {
-
-}
-
