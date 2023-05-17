@@ -9,6 +9,13 @@
     box-sizing: border-box;
 }
 
+.fa-eye, .fa-eye-slash {
+    cursor: pointer;
+}
+
+div {
+    user-select: none;
+}
 
 /* html {
     font-size: 62.7%;

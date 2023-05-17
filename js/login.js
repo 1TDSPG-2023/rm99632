@@ -22,11 +22,11 @@ listaDeUsuarios.push(usuario1);
 listaDeUsuarios.push(usuario2);
 
 addEventListener("click", (evt)=>{
-
+    const inputUser = document.querySelector("#idUser");
+    const inputPass = document.querySelector("#idPass");
+    
     if(evt.target.id == "btnSubmit"){
         
-        const inputUser = document.querySelector("#idUser");
-        const inputPass = document.querySelector("#idPass");
         
         try {
 
@@ -60,5 +60,20 @@ addEventListener("click", (evt)=>{
     }
 
 
+    }
+
+    //DESAFIO :
+    //Troque o ícone do olho aberto assim que o usuário clicar para ver a senha pelo icone de olho cortado.
+
+    // EXIBINDO SENHA
+    else if(evt.target.className == "fa fa-eye"){
+        inputPass.setAttribute("type", "text");
+        evt.target.setAttribute("class", "fa fa-eye-slash");
+
+    } 
+    // OCULTANDO SENHA
+    else if(evt.target.className == "fa fa-eye-slash"){
+        inputPass.setAttribute("type", "password");
+        evt.target.setAttribute("class", "fa fa-eye");
     }
 });
