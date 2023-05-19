@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://media.seudinheiro.com/uploads/2021/09/Leao.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#welcome {
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#welcome >span, #btnSair {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#welcome >span {
+    animation-name: title;
+    animation-duration: 10s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+
+    font-stretch:ultra-expanded;
+    font-weight: 900;
+    text-align: center;
+
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.425);
+
+    width: 75vh;
+
+}
+
+#btnSair {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px;
+    height: height;
+    width: calc(100vh / 2);
+    background-color: #000;
+    border:outset 5px #ff7300;
+    color: white;
+    border-radius: 15px;
+    position:absolute;
+    top: 5vh;
+    left: 5vw;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: 0.5s;
+}
+
+#btnSair:hover {
+    color: #00000085;
+    background: #ff7300;
+    box-shadow: 0 0 10px #ff7300, 0 0 40px #ff7300, 0 0 80px #ff7300;
+}
+
+
+@keyframes title {
+    0%, 100% {color: rgb(153, 0, 255);}
+    50% {color: rgb(255, 0, 140);}
+}
